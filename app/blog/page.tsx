@@ -22,7 +22,7 @@ export default async function BlogPage({ searchParams }: Props) {
 
   return (
     <Container padTop={false}>
-      <Heading as="h1">Welcome to my blog.</Heading>
+      <Heading as="h1">Welcome to my blog</Heading>
       <div className="divide-y divide-black space-y-4 lg:space-y-8 mt-8">
         {posts.map((post) => (
           <div key={post.slug.current} className="pt-4 lg:pt-8">
