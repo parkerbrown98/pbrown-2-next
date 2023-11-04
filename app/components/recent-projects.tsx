@@ -14,8 +14,8 @@ export default async function RecentProjects({ className, ...props }: Props) {
   return (
     <div className={classNames(className, "flex flex-wrap gap-4")} {...props}>
       {orderedRepos.slice(0, 5).map((repo) => (
-        <div className="flex-shrink-0">
-          <ProjectCard key={repo.id} {...repo} />
+        <div key={repo.id} className="flex-shrink-0">
+          <ProjectCard {...repo} />
         </div>
       ))}
     </div>
