@@ -13,8 +13,20 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        'terminal-cursor': {
+          '0%': { opacity: "0" },
+          '50%': { opacity: "1" },
+          '100%': { opacity: "0" },
+        },
+      },
+      animation: {
+        'terminal-cursor': 'terminal-cursor 1s infinite',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 export default config
