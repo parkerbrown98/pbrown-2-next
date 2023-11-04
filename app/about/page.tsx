@@ -7,12 +7,12 @@ export default function AboutPage() {
       <Container padTop={false}>
         <Heading as="h1">About Me</Heading>
         <p className="mt-8 prose">
-          Hi, I'm Parker. I'm a software engineer, currently working at{" "}
+          Hi, I&apos;m Parker. I&apos;m a software engineer, currently working at{" "}
           <a href="https://www.lucidprivateoffices.com">
             Lucid Private Offices
           </a>{" "}
-          in the DFW area. I like to build things and write about it. I'm a big
-          fan of the Jamstack, and I'm currently using{" "}
+          in the DFW area. I like to build things and write about it. I&apos;m a big
+          fan of the Jamstack, and I&apos;m currently using{" "}
           <a href="https://nextjs.org">Next.js</a> and{" "}
           <a href="https://sanity.io">Sanity</a> to build this site.
         </p>
@@ -31,7 +31,7 @@ export default function AboutPage() {
         <Heading as="h2">Work Experience</Heading>
         <p className="mt-8 prose">
           I have worked at Lucid Private Offices since 2022, where I have
-          primarily worked on the company's website and internal tools. As well
+          primarily worked on the company&apos;s website and internal tools. As well
           as Next.js and React, I have worked with Python, Django and Postgres
           to build an internal CMS and API.
         </p>
