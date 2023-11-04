@@ -7,6 +7,7 @@ import moment from "moment";
 import Image from "next/image";
 import classNames from "classnames";
 import CopyLinkButton from "@/app/components/copy-link";
+import BackButton from "@/app/components/back-button";
 
 type Props = {
   params: {
@@ -35,6 +36,7 @@ export default async function BlogPostPage({ params }: Props) {
       })}
     >
       <Container padTop={false}>
+        <BackButton href="/blog" text="Back to Blog" className="mb-4" />
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
           <div className="max-w-prose">
             <Heading as="h1">{post.title}</Heading>
