@@ -2,6 +2,12 @@ import { redirect } from "next/navigation";
 import Container from "../components/container";
 import Heading from "../components/heading";
 import { Resend } from "resend";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "contact me | pbrown.dev",
+  description: "Have questions? Need a project done? Get in touch with me.",
+};
 
 export default function ContactPage() {
   async function submit(formData: FormData) {

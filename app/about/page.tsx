@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import Container from "../components/container";
 import Heading from "../components/heading";
+
+export const metadata: Metadata = {
+  title: "about | pbrown.dev",
+  description: "I am a software engineer based in Dallas, TX. I like to build things and write about it.",
+};
 
 export default function AboutPage() {
   return (

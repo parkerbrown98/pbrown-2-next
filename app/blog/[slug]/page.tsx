@@ -15,6 +15,15 @@ type Props = {
   };
 };
 
+export async function generateMetadata({ params }: Props) {
+  const post = await getPost(params.slug);
+
+  return {
+    title: `${post.title} | pbrown.dev`,
+    description: `Read about ${post.title} on pbrown.dev`,
+  };
+}
+
 export async function generateStaticParams() {
   const { posts } = await getPosts({ page: 1, pageSize: 1000 });
 
