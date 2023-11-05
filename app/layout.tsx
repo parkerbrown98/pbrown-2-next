@@ -4,6 +4,7 @@ import './globals.css'
 import Header from './components/header'
 import Container from './components/container'
 
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: 'root | pbrown.dev',
